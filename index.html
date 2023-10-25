@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Viveka Nanthini-PORTFOLIO</title>
+        <style>
+            body {font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+
+            }
+            header {
+                background-color: #481669;
+                color: #fff;
+                text-align: center;
+                padding: 2rem 0;
+                position: relative;
+            }
+
+            .header-content h1 {
+                font-size: 2.5rem;
+
+            } 
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+                border-radius: 75%;
+                object-fit: cover;
+                position: absolute;
+                top: 75px;
+                left: 75px;
+            }
+            nav{
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+            }
+            nav ul{
+                list-style: none;
+                padding: 0;
+
+            }
+            nav ul li{
+                display: inline;
+                margin: 0 20px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .section-content{
+                background-color: #fff;
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+            }
+            .download-button{
+                background-color: #8e65bd;
+                color:#fff;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+            .download-button:hover{
+                background-color: #555;
+            }
+            footer{
+                text-align: center;
+                padding: 1rem;
+                background-color: #333;
+                color: #fff;
+            }
+            ul{
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+    <header>
+        <div class="header-content">
+        <img src="viveka.jpg"class="profile-picture">
+        <h1>Viveka Nanthini</h1>
+        <p>student of information technology</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#ABOUT ME">ABOUT ME</a></li>
+            <li><a href="#EDUCATION">EDUCATION</a></li>
+            <li><a href="#SKILLS">SKILLS</a></li>
+            <li><a href="#PROJECTS">PROJECT</a></li>
+            <li><a href="#RESUME">RESUME</a></li>
+        </ul>
+    </nav>
+    <section id="ABOUT ME">
+        <div class="section-content">
+            <h2>ABOUT ME</h2>
+            <P>Hi! This is Viveka Nanthini and i am a information technology student </P>
+        </div>
+    </section>
+    <section id="EDUCATION">
+        <div class="section-content">
+            <h2>Final year BSC[ Information Techology] in progress</h2>
+            <P>Mohamed sathak hamid college of arts and science for women</P>
+        </div>
+    </section>
+    <section id="SKILLS">
+        <div class="section-content">
+            <h2>SKILLS</h2>
+            <li>Python</li>
+            <li>Cloud Computing</li>
+            <li>Artifical Intelligence</li>
+            <li>Machine Learning</li>
+            <li>Data analysis</li>
+            <li>Problem Solver</li>
+            
+        </div>
+    </section>
+    <section id="PROJECTS">
+        <div class="section-content">
+            <h2>PROJECTS</h2>
+            <UL>
+                <li><a href="#">PROJECT1</a></li>
+                <li><a href="#">PROJECT2</a></li>
+            </UL>
+        </div>
+    </section>
+    <section id="RESUME">
+        <center>
+            <div class="section-content"> 
+                <h2>RESUME</h2> 
+                <a href=class="download-button">DOWNLOAD CV</a>
+            </div>
+        </center>
+    </section>
+    <footer>
+        <P>&COPY;2023Viveka Nanthini</P>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor=>
+        {
+            anchor.addEventListener('click',function(e)
+        
+            {
+                e.preventDefault();
+                const targetId=this.getAttribute('href').substring(1);
+                const targetElement=document.getElementById(targetId);
+                if(targetElement)
+                {
+                    window.scrollTo(
+                        {
+                            top:targetElement.offsetTop,behavior:'smooth'
+                        });
+                    }
+                });
+            });
+            </script>
+            </body>
+            </html>
+
+
+
+    
+
